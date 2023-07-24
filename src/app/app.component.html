@@ -35,8 +35,9 @@
   <ng-container *ngIf="showList">
     <ul>
       <li *ngFor="let shirt of shirts">
-        {{ shirt.id }} {{ shirt.name }}
-        {{ shirt.price | currency : "USD" }}
+        <span class="id">{{ shirt.id }}</span>
+      <span class="name">{{ shirt.name }}</span>
+      <span class="price">{{ shirt.price | currency : "USD" }}</span>
       </li>
     </ul>
   </ng-container>
